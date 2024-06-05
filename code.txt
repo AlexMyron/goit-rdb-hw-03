@@ -6,8 +6,8 @@ SELECT name, phone FROM shippers;
 
 // p2
 SELECT 
-  AVG(price) AS average_price
-  MAX(price) AS max_price
+  AVG(price) AS average_price,
+  MAX(price) AS max_price,
   MIN(price) AS min_price
 FROM products;
 
@@ -18,7 +18,7 @@ ORDER BY price DESC
 LIMIT 10;
 
 // p4
-SELECT COUNT(id) AS total-quantity
+SELECT COUNT(id) AS total_quantity
 FROM products
 WHERE price > 20 AND price < 100;
 
